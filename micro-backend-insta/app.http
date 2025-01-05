@@ -1,0 +1,54 @@
+# Create a New User
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "mobile_number": "1234567890",
+  "address": "123 Main Street"
+}
+
+###
+
+# Get All Users
+GET http://localhost:3000/users
+
+###
+
+# Create a New Post
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "title": "My First Post",
+  "description": "This is the content of my first post.",
+  "user_id": 1,
+  "images": ["image1.jpg", "image2.jpg"]
+}
+
+###
+
+# Get All Posts
+GET http://localhost:3000/posts
+
+###
+
+# Get Posts by User ID
+GET http://localhost:3000/posts/1
+
+###
+
+# Update a Post
+PUT http://localhost:3000/posts/1
+Content-Type: application/json
+
+{
+  "title": "Updated Post Title",
+  "description": "Updated content for the post.",
+  "images": ["updated_image1.jpg", "updated_image2.jpg"]
+}
+
+###
+
+# Delete a Post
+DELETE http://localhost:3000/posts/1
