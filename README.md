@@ -1,4 +1,4 @@
-# Micro Backend Insta
+# Micro Backend Instagram
 
 A backend application built with **Express.js** and **SQLite** to manage users and posts for a mini social media platform.
 
